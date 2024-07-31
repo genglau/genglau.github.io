@@ -77,6 +77,7 @@ body{
   /*.headerphoto*/
   .headerphoto{
     border-radius: 50%;
+    border:var(--action) 5px solid;
 }
  @media (min-width: 768px) {
     .headerphoto {
@@ -115,6 +116,324 @@ body{
     height: 50px;
   }
   
+  
+  /*.hero*/
+  .hero {
+    display: flex;
+    flex-wrap: warp;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+
+  }
+  
+
+  /*.herophoto*/
+  .herophoto {
+    position:relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position:center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: var(--brand) 10px solid;
+  }
+
+  #myphoto {
+    background-image: url(img/my\ photo.jpg);
+  }
+
+  #myproject {
+    background-image: url(img/Shecodes.png);
+  }
+
+  #contactme {
+    background-image: url(img/contact\ me.PNG);
+  }
+
+  .overlay-text {
+     display: none;
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     background: var(--action);
+     color: var(--base-dark);
+     width:400%;
+     text-align: center;
+     padding: 0.5rem;
+     text-decoration: none;
+     text-size-adjust: larger;
+     font-weight: bolder;
+     
+  }
+
+  .herophoto:hover .overlay-text {
+    display: block;
+  }
+
+  .herophoto:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width:768px) {
+    .herophoto {
+      width: 450px;
+      height: 450px;
+    }
+
+    #myphoto {
+      order: 1;
+    }
+
+    #myproject {
+      order: 2;
+    }
+
+    #contactme {
+      order: 3;
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      width: 80px;
+      height: 80px;
+    }
+
+    .hero {
+      flex-direction: column;
+    }
+
+  }
+
+  @media (min-width:769px) {
+    .herophoto {
+      width: 450px;
+      height: 450px;
+    }
+
+    .hero {
+      flex-direction: row;
+    }
+  }
+
+
+
+  /*.aboutme*/
+  .aboutme {
+    background-color: var(--base-dark);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: var(--action) 20px solid;
+    padding:20px var(--action) solid;
+    align-items: center;
+    color:var(--white);
+    border-radius: 50px;
+    
+  }
+
+  .abouttitle{
+    display:felx;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+
+  .abouttext{
+    align-items: center;
+    overflow-wrap: anywhere; 
+    padding: 0.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 20px;
+    gap: 5px;
+    line-height: 2;
+    display:block;
+    unicode-bidi: isolate;
+  }
+  /*.articles-container*/
+
+  .articles-container{
+    background-color: var(--base-light);
+    margin-left: 80px;
+    margin-right: 80px;
+    /* border: 20px var(--brand) solid; */
+    /* padding: 20px; */
+    color: var(--white);
+    display: flex;
+  }
+
+
+    @media only screen and (min-width:600px){
+      .articles-container{
+        display: flex;
+      }
+
+    }
+
+    /*.article*/
+    article{
+      /* padding:16px 16px; */
+      background-color: var(--base-dark);
+      border: var(--action) 20px solid;
+      border-radius: 50px;
+      margin:0px 10px;
+      transition:all 0.3s ease;
+    }
+
+    @media only screen and (min-width:600px){
+      article{
+        padding:50px;
+      }
+    }
+
+    article:hover{
+      filter: contrast(150%);
+
+    }
+
+    article .article-heading h3 {
+      display: flex;
+      justify-content: center;
+    }
+
+    article .project-photo {
+      width: 250px;
+      /* border: var(--action) solid 10px; */
+    }
+  
+  /*.contact-form */
+  .contact-form{
+    padding:48px 16px;
+    border: var(--action) 20px solid;
+    border-radius: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 50px;
+    background-color: var(--base-dark);
+  }
+
+  .contact-form input{
+    display: block;
+    width:100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    border-radius: 50px;
+    
+  }
+  
+  
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border-style: dotted;
+  }
+
+  .contact-form label {
+    display: block;
+    width: 100%;
+    color: var(--white);
+  }
+
+  .contact-form h2 {
+    color:var(--white);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    text-size-adjust: larger;
+    text-shadow: var(--action);
+    /* background-color: var(--base-dark); */
+  
+  }
+
+  .contact-form input[type="button"]{
+    background-color: var(--action);
+    margin-top: 12px; 
+    cursor:pointer
+  }
+  
+  .submit {
+    border: solid 5px var(--base-dark);
+    background-color: var(--brand);
+
+    width: 250px;
+    size-adjust: larger;
+    /* height: 250px; */
+
+    display:flex;
+    justify-content: center;
+    border-radius: 50%;
+
+  }
+
+  /* @media (min-width: 768px) {
+    .contact-form h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+  
+    .contact-form form {
+        max-width: 60%;
+        margin: 40px auto;
+    }
+  } */
+
+  /*footer*/
+  footer{
+    padding: 16px;
+    text-align: center;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+   @media (min-width: 768px) {
+       footer {
+           justify-content: center;
+       }
+     
+       footer .social-icon {
+           margin-left: 20px;
+           margin-right: 20px;
+       }
+     }
+
+
+
+
+
+
+
+      
+    
+
+
+
+
+
+
+
   /* style to make style guide */
   body {
     padding: 20px;
@@ -163,7 +482,4 @@ body{
     background-color: var(--base-lightest);
   } */
 
-  .dog{
-    border: 10px solid var(--base-light);
-  }
   

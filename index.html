@@ -10,12 +10,12 @@
 </head>
 
   <header>
-  <header class="checkbox"
+  <header class="checkbox">
     <div class="mobile-header">
       <img class="headerphoto"
-      src="img\Dog-.jpg"
+      src="img/my photo.jpg"
       alt="header image"
-      width="80px"
+      width="100px"
       />
       <button type="button" class="hamburger-button">
         <img class="hamburger-icon" src="./img/hamburger.svg"
@@ -52,23 +52,129 @@
   </header>
     
   <body>
+    <section class="hero">
     
-    <h1>This page has an external stylesheet!</h1>
-    <h2>example 2
+      <div class="herophoto" id="myphoto">
+        <img class="herophoto"
+        src="img/my photo.jpg"
+        alt="hero my photo" 
+        >
+        <a href="#" class="overlay-text">My Bio</a>
+      
+      </div>
 
-    </h2>
-  </body>
+      <div class="herophoto" id="myproject">
+        <img class="herophoto" src="img/Shecodes.png" alt="hero project photo">
+        <a href="#" class="overlay-text">My Projects</a>
+      </div>
+
+      <div class="herophoto" id="contactme">
+        <img class="herophoto" src="img/contact me.PNG" alt="contact me photo">
+        <a href="#" class="overlay-text">Contact Me</a>
+      </div>
+        
+    </section>
 
 
-   <p>Example text</p>
 
-   <h2>Look, a picture of a silly dog!</h2>
 
-   <img class="dog" 
-       src="https://upload.wikimedia.org/wikipedia/commons/4/48/Silly_Dog_%282277051513%29.jpg"   
-       alt="A silly looking dog."
-       width="400px" 
-   />
+    <section class="aboutme">
+      <section class="abouttitle">
+      <h2>About Geng</h2>
+     </section>
+     
+     <section class="abouttext">
+
+      <p>
+        Hi there! I’m Geng, a curious explorer with over a decade of experience in tax and accounting. While I never had the chance to learn coding before, my passion for technical development has always burned bright.
+
+      </p> 
+      <p>
+        Recently, luck smiled upon me—I snagged a spot in the She Codes Australia Plus Course! Despite my non-IT background, I’ve been tenaciously following the course. As a quick learner and hard worker, I’ve embraced HTML/CSS, Python, Django + DRF, JS, and React.
+      </p>  
+      
+      <p>
+        My inquisitive mind is always probing for the root cause of problems. I’m that person who raises her hand and asks, “Why?”
+      </p>
+      <p>
+        Resilience? It’s my middle name. Challenges don’t scare me; they fuel my fire. Passion? Oh, it’s practically my superpower!
+      </p>
+      <p>
+        Let’s code together and unravel mysteries! 
+      </p>
+
+      
+     </section>
+   </section>
+
+    <section class="articles-container">
+      <article>
+        <h3>My Project 1 </h3>
+        <a calss="project-photo" href="#">Check it out!</a>
+        <img class="project-photo" src="img/logo.png"
+          alt="a project photo"/>
+          
+        
+      </article>
+
+      <article>
+        <h3>My Project 2 </h3>
+        <a calss="project-photo" href="#">Check it out!</a>
+        <img class="project-photo" src="img/logo.png"
+          alt="a project photo"/>
+
+          
+      </article>
+
+      <article>
+        <h3>My Project 3 </h3>
+        <a calss="project-photo" href="#">Check it out!</a>
+        <img class="project-photo" src="img/logo.png"
+          alt="a project photo"/>
+        
+          
+      </article>
+
+      <article>
+        <h3>My Project 4 </h3>
+        <a calss="project-photo" href="#">Check it out!</a>
+        <img class="project-photo" src="img/logo.png"
+          alt="a project photo"/>
+         
+         
+      </article>
+
+    </section>
+
+    <section class="contact-form">
+       <h2>Contact Me </h2>
+       <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" spellcheck="true" required aria-required="true">
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" spellcheck="true" required aria-required="true">
+        <label for="message">Your Message:</label>
+        <textarea name="message" id="message" spellcheck="true" required aria-required="true" rows="10"></textarea>
+        <button class="submit" id="submit" type="button"> Submit</button>
+
+       </form>
+    </section>
+   <footer>
+    <a href="#" title="Instagram">
+      <img class="social-icon" src="img/instagram.svg" alt="The Instagram logo"/>
+    </a>
+
+    <a href="#" title="Slack">
+      <img class="social-icon" src="img/slack.svg" alt="The Slack logo"/>
+    </a>
+
+    <a href="#" title="Github">
+      <img class="social-icon" src="img/github.svg" alt="The Github logo"/>
+    </a>
+
+
+   </footer> 
+
  </body>
 
  </html>
