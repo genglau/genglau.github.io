@@ -1,6 +1,6 @@
 #  genglau - Portfolio Task
 ​
-[My portfolio site](genglau/genglau.github.io.git)
+[My portfolio site](genglau.github.io)
 ​
 ## Project Requirements
 
