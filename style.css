@@ -49,6 +49,8 @@
   h6{
   font-family: var(--heading-font)
   }
+
+
   
   /*.header & checkbox*/
   .checkbox{
@@ -192,7 +194,7 @@
   }
   
   body{
-    background-color: var(--base-darker);
+    background-color: var(--base-light);
 } 
   /*.hero*/
   .hero {
@@ -433,12 +435,12 @@
     }
 
    .articles-container .project-btn {
-      background-color: var(--action);
+      
       text-decoration: none;
-      color: var(--white);
+      color: var(--base-dark);
       background-color: var(--action);
-      /* display: flex;
-      justify-content: center; */
+      display: flex;
+      justify-content: center;
     }
 
     article .project-photo {
@@ -631,21 +633,83 @@
      
   /*projects.html setting*/
 
+  .project-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    z-index: 1000;;
+    margin:0 auto;
+    padding-top: 15px;
+
+    
+  }
+ 
+
   .project-logo {
     width: 50px;
     border-radius: 50%;
+    
   }
 
-  .project-hero h2 {
+  .project-hero h2{
+    display:flex;
     background-color: var(--base-light);
     margin:0%;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
+    color: var(--white);
     
   }
 
-  
+  .projectspg{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectspg-photo{
+    width: 100%;
+  }
+
+  .projectarticle{
+    background-color: var(--base-dark);
+    border:var(--action) 5px solid;
+    border-radius: 25%;
+  }
+
+  .projectarticle h3{
+    color:var(--white);
+  }
+
+  .projectcontact{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    font-size: larger;
+  }
+
+  @media (min-width:600px){
+    .projectspg{
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap:20px;
+      margin-top: 20px;
+    }
+
+    .projectarticle{
+      width:calc(50% - 20px);
+      flex-grow: 1;
+
+    }
+  }
+
+  @media (min-width:1024px){
+    .projectspg{
+    flex-wrap: nowrap;
+    }
+   }
 
 
 

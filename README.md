@@ -10,7 +10,7 @@
 - [ ] Biography (at least 100 words) - done
 - [ ] Functional Contact Form - added
 - [ ] "Projects" section - added
-- [ ] Links to external sites, e.g. GitHub and LinkedIn. - included portfolio site for Github in the footer
+- [ ] Links to external sites, e.g. GitHub and LinkedIn. - done
 ​
 ### Technical
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
@@ -33,4 +33,4 @@
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
 ####  image_title_goes_here 
-![Put a description of your image here](./relative_path_to_file)
+![screenshots of my portfolio](./img-protfolio/)
