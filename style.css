@@ -655,7 +655,7 @@
   .project-hero h2{
     display:flex;
     background-color: var(--base-light);
-    margin:0%;
+    margin:20px;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -676,6 +676,7 @@
     background-color: var(--base-dark);
     border:var(--action) 5px solid;
     border-radius: 25%;
+    margin: 10px;
   }
 
   .projectarticle h3{
@@ -699,7 +700,7 @@
     }
 
     .projectarticle{
-      width:calc(50% - 20px);
+      width:calc(50% - 40px);
       flex-grow: 1;
 
     }
